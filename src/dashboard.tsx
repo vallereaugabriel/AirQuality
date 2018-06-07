@@ -74,7 +74,7 @@ class Dashboard extends React.Component<Props, State> {
         saveSearch(value);
       }
     } catch (e) {
-      error = e;
+      fetchError = e;
     }
     this.setState({result, error, fetchError});
   }
